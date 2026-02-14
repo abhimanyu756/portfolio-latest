@@ -1,7 +1,7 @@
 
 import { Section, Reveal } from './ui';
 import { profile } from '../data/profile';
-import { Mail, Linkedin, Github } from 'lucide-react';
+import { Mail, Linkedin, Github, X } from 'lucide-react';
 
 const Skills = () => {
     return (
@@ -57,6 +57,12 @@ const Contact = () => {
                                 <Github size={32} />
                             </div>
                             <span>GitHub</span>
+                        </a>
+                        <a href={profile.contact.X} target="_blank" rel="noopener noreferrer" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px' }}>
+                            <div style={{ padding: '16px', backgroundColor: '#1d1d1f', borderRadius: '50%' }}>
+                                <X size={32} />
+                            </div>
+                            <span>X</span>
                         </a>
                     </div>
                     <p style={{ fontSize: '14px', color: 'var(--text-secondary)' }}>

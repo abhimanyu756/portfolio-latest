@@ -5,8 +5,9 @@ export const profile = {
     contact: {
         email: "abhimanyu81026@gmail.com",
         mobile: "+918102652783",
-        linkedin: "https://linkedin.com", // Placeholder
+        linkedin: "https://www.linkedin.com/in/abhimanyu-k-00b40611a/", // Placeholder
         github: "https://github.com/abhimanyu756",
+        X: "https://x.com/abhimanyu_ka"
     },
     summary: "Software Development Engineer with 2.6 years of experience building scalable, distributed backend systems and full-stack applications. Proven track record architecting fault-tolerant solutions processing 2M+ transactions daily. Passionate about solving ambiguous problems and delivering customer-obsessed solutions at scale.",
     experience: [
@@ -60,30 +61,32 @@ export const profile = {
         "AWS", "Azure", "Docker", "Kubernetes", "Microservices"
     ],
     projects: [
+
+        {
+            name: "TrustCheck.ai",
+            description: "AI-powered verification system for comprehensive employee background checks. Manage clients, upload documents, and track verification status all in one place.",
+            techStack: ["React", "ExpressJs", "PineconeDB", "PostgreSQL", "Gemini API", "gmail", "sheet"],
+            link: "http://162.133.142.117/",
+            github: "https://github.com/abhimanyu756/TrustCheck",
+            video: "https://youtu.be/ViW8e2XJZQU"
+        },
         {
             name: "JobSwitch.ai",
             description: "AI Career Copilot. Multi-agent AI system using WatsonX.ai and LangChain. 2nd Place Global Winner at IBM TechXchange Hackathon.",
             techStack: ["WatsonX.ai", "LangChain", "React", "FastAPI", "PostgreSQL"],
             link: "https://jobswitch.ai", // Placeholder
-            github: "https://github.com/abhimanyu756", // Placeholder
-            video: ""
+            github: "https://github.com/Abhimanyu-kr-yadav/jobswitch.ai", // Placeholder
+            video: "https://www.youtube.com/watch?v=_ll5gMm7dz0"
         },
         {
             name: "Cloud Accounting Application",
             description: "Full-stack accounting platform automating financial workflows. 2nd Place National Winner at Odoo X NMIT Hackathon.",
             techStack: ["React", "ExpressJs", "MySQL"],
             link: "",
-            github: "https://github.com/abhimanyu756", // Placeholder
-            video: ""
-        },
-        {
-            name: "Portfolio Website",
-            description: "A minimalist, high-performance portfolio website inspired by Apple's design language.",
-            techStack: ["React", "Vite", "Framer Motion"],
-            link: "https://github.com/abhimanyu756",
-            github: "https://github.com/abhimanyu756",
-            video: ""
+            github: "https://github.com/ChetanTiwari195/Mojo_hackathon", // Placeholder
+            video: "https://www.youtube.com/watch?v=Zv7XZhpuxgY"
         }
+
     ],
     hackathons: [
         {
@@ -91,7 +94,7 @@ export const profile = {
             description: "Architected multi-agent AI system using WatsonX.ai and LangChain. 500+ concurrent requests, Real-time WebSocket updates.",
             award: "2nd Place Winner - Global (IBM TechXchange Hackathon)",
             techStack: ["WatsonX.ai", "LangChain", "React", "FastAPI", "PostgreSQL"],
-            link: "https://jobswitch.ai",
+            link: "https://github.com/Abhimanyu-kr-yadav/jobswitch.ai",
             video: ""
         },
         {
@@ -99,22 +102,26 @@ export const profile = {
             description: "Full-stack accounting platform automating financial workflows. Serves 50+ concurrent users.",
             award: "2nd Place Winner - National (Odoo X NMIT Hackathon)",
             techStack: ["React", "ExpressJs", "MySQL"],
-            link: "",
+            link: "https://github.com/ChetanTiwari195/Mojo_hackathon",
             video: ""
         }
     ],
     certifications: [
         {
             name: "AWS Cloud Practitioner",
-            link: "https://aws.amazon.com/certification/certified-cloud-practitioner/"
+            link: "https://www.credly.com/badges/e34fda1d-8c7a-4035-b70c-e7556ff79ea0/linked_in_profile"
         },
         {
             name: "Azure Fundamentals",
-            link: "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/"
+            link: "https://learn.microsoft.com/en-in/users/abhimanyukumar-6472/credentials/13f6e738fafce1a4?ref=https%3A%2F%2Fwww.linkedin.com%2F"
         },
         {
             name: "Azure Developer Associate – AZ204",
-            link: "https://learn.microsoft.com/en-us/credentials/certifications/azure-developer/"
+            link: "https://learn.microsoft.com/en-in/users/abhimanyukumar-6472/credentials/4a12755d80da89e7?ref=https%3A%2F%2Fwww.linkedin.com%2F"
+        },
+        {
+            name: "Microsoft Certified: DevOps Engineer Expert",
+            link: "https://learn.microsoft.com/en-sus/users/abhimanyukumar-6472/credentials/15c040c60d13fc16?ref=https%3A%2F%2Fwww.linkedin.com%2F"
         }
     ]
 

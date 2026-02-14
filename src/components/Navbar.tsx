@@ -1,7 +1,14 @@
 
 import { motion } from 'framer-motion';
 
-const Navbar = () => {
+interface NavbarProps {
+    activeSection: string;
+    setActiveSection: (section: string) => void;
+}
+
+const Navbar = ({ activeSection, setActiveSection }: NavbarProps) => {
+    const navItems = ['Hero', 'Projects', 'Hackathons', 'Experience', 'Certifications', 'Connect'];
+
     return (
         <motion.nav
             initial={{ y: -100 }}
@@ -24,25 +31,32 @@ const Navbar = () => {
                 borderBottom: '1px solid rgba(255, 255, 255, 0.1)'
             }}
         >
-            <div style={{ fontWeight: 600, fontSize: '18px', color: 'var(--text-primary)' }}>
+            <div
+                style={{ fontWeight: 600, fontSize: '18px', color: 'var(--text-primary)', cursor: 'pointer' }}
+                onClick={() => setActiveSection('Hero')}
+            >
                 Abhimanyu.
             </div>
-            <div>
-                {['Projects', 'Hackathons', 'Experience', 'Certifications', 'Connect'].map((item) => (
-                    <a
+            <div style={{ display: 'flex', gap: '8px' }}>
+                {navItems.filter(item => item !== 'Hero').map((item) => (
+                    <button
                         key={item}
-                        href={`#${item.toLowerCase()}`}
+                        onClick={() => setActiveSection(item)}
                         style={{
-                            marginLeft: '24px',
+                            background: 'none',
+                            border: 'none',
                             fontSize: '14px',
-                            color: 'var(--text-secondary)',
-                            transition: 'color 0.2s',
+                            color: activeSection === item ? 'var(--text-primary)' : 'var(--text-secondary)',
+                            transition: 'all 0.2s',
+                            cursor: 'pointer',
+                            padding: '8px 16px',
+                            borderRadius: '20px',
+                            backgroundColor: activeSection === item ? 'rgba(255, 255, 255, 0.1)' : 'transparent',
+                            fontWeight: activeSection === item ? 500 : 400
                         }}
-                        onMouseEnter={(e) => e.currentTarget.style.color = 'var(--text-primary)'}
-                        onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text-secondary)'}
                     >
                         {item}
-                    </a>
+                    </button>
                 ))}
             </div>
         </motion.nav>
